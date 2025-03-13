@@ -47,7 +47,7 @@ public:
     
     // получить обороты в минуту
     uint32_t getRPM() {
-        return getTime() ? (60000000ul / prd) : 0;
+        return getTime() ? (60000000ul / (prd * 20)) : 0;
     }
 
     // получить частоту в герцах
